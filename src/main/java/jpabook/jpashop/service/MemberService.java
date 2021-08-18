@@ -43,7 +43,7 @@ public class MemberService {
     }
 
     @Transactional
-    public void update(Long id, String name) {
+    public void updateMember(Long id, String name) {
         Member member = memberRepository.findOnd(id);
         member.setName(name);
     }
